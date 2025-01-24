@@ -4,7 +4,7 @@ doctypes:
     - task
 tags:
     - docs
-title: Add a file in a configuration
+title: Add a file in a Config Sync Group
 toc: true
 weight: 400
 ---
@@ -20,18 +20,17 @@ a UI that resembles an Integrated Development Environment (IDE), with recommenda
 Before you add files in your configuration, ensure:
 
 - You have access to the NGINX One Console.
-- NGINX instances are properly registered with NGINX One Console
+- Config Sync Groups are properly registered with NGINX One Console
 
 ## Important considerations
 
-If your instance is a member of a Config Sync Group, changes that you make may be synchronized to other instances in that group.
-For more information, see how you can [Manage Config Sync Groups]({{< relref "/nginx-one/how-to/config-sync-groups/manage-config-sync-groups.md" >}}).
+This page applies when you want to add a file to a Config Sync Group. Any changes you make here apply to all [Instances]({{< relref "/nginx-one/glossary.md" >}}) of that Config Sync Group.
 
 ## Add a file
 
-You can use the NGINX One Console to add a file to a specific instance. To do so:
+You can use the NGINX One Console to add a file to a specific Config Sync Group. To do so:
 
-1. Select the instance to manage.
+1. Select the Config Sync Group to manage.
 1. Select the **Configuration** tab.
 
    {{< tip >}}
@@ -91,7 +90,6 @@ In the **Choose Certificate** drop-down, select the managed certificate of your 
    You should now see the files you specified in the directory tree.
 1. Select **Next** and then **Save and Publish**.
    You may see a message that suggests publication is in progress.
-   - If the instance is offline, **Save and Publish** does not work.
 1. When publication is complete, you're taken back to the **Configuration** tab. You should see the updated configuration in the window.
 
 ## See also
