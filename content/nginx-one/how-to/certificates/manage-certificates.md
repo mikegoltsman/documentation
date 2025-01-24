@@ -14,6 +14,11 @@ weight: 100
 
 This guide explains how you can manage SSL/TLS certificates with the F5 NGINX One Console. Valid certificates support encrypted connections between NGINX and your users. 
 
+You may have separate sets of SSL/TLS certificates for:
+- Deployments of NGINX, to support secure web services
+  - For more information on how you can use these certificates to secure your servers, see the section on [NGINX SSL termination]({{< relref "/nginx/admin-guide/security-controls/terminating-ssl-http.md" >}}).
+- [Subscription licenses]({{< relref "/solutions/about-subscription-licenses.md" >}})
+
 From the NGINX One Console you can:
 
 - Monitor all certificates configured for use by your connected NGINX Instances.
@@ -22,10 +27,9 @@ From the NGINX One Console you can:
 
 You can manage the certificates for:
 
-- [Unique instances]({{ < relref "/nginx-one/how-to/nginx-configs/add-file.md" >}})
-- For [all instances that are members of a Config Sync Group]({{ < relref "/nginx-one/how-to/config-sync-groups/add-file.md" >}})
+- [Unique instances]({{< relref "/nginx-one/how-to/nginx-configs/add-file.md#new-ssl-certificate-or-ca-bundle" >}})
+- For all instances that are members of a [Config Sync Group]({{< relref "/nginx-one/how-to/config-sync-groups/manage-config-sync-groups/#configuration-management" >}})
 
-For more information on how you can use these certificates to secure your servers, refer to the section on [NGINX SSL termination]({{< relref "/nginx/admin-guide/security-controls/terminating-ssl-http.md" >}}).
 
 {{< tip >}}
 
